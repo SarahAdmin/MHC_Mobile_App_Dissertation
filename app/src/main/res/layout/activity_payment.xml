@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+
+    <TextView
+        android:id="@+id/payment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="81dp"
+        android:text="Payment"
+        android:textColor="#ffffff"
+        android:textSize="95px"
+        app:layout_constraintBottom_toTopOf="@+id/chn_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chn_title"
+        android:layout_width="133dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="81dp"
+        android:text="Cardholder Name:"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        app:layout_constraintEnd_toStartOf="@+id/cardholder_name_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_title" />
+
+    <EditText
+        android:id="@+id/cardholder_name_input"
+        android:layout_width="251dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="32dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/select_card_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chn_title" />
+
+    <TextView
+        android:id="@+id/ct_title"
+        android:layout_width="97dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="46dp"
+        android:text="Card Type:"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        app:layout_constraintEnd_toStartOf="@+id/select_card_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chn_title" />
+
+    <TextView
+        android:id="@+id/cn_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="15dp"
+        android:text="Card Number:"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        app:layout_constraintEnd_toStartOf="@+id/card_number_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ct_title" />
+
+    <EditText
+        android:id="@+id/card_number_input"
+        android:layout_width="254dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="31dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/month_selected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cn_title" />
+
+    <TextView
+        android:id="@+id/expiry_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="38dp"
+        android:text="Expiry Date"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        app:layout_constraintEnd_toStartOf="@+id/month_selected"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cn_title" />
+
+    <TextView
+        android:id="@+id/cvv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="49dp"
+        android:text="CVV:"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        app:layout_constraintEnd_toStartOf="@+id/cvv_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expiry_date_title" />
+
+    <EditText
+        android:id="@+id/cvv_input"
+        android:layout_width="198dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:background="#ffff"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cvv_title"
+        app:layout_constraintTop_toBottomOf="@+id/year_selected" />
+
+    <TextView
+        android:id="@+id/subtotal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="319dp"
+        android:text="Subtotal:"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvv_title" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#ff0000"
+        android:onClick="backPage"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="110dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#ff0000"
+        android:onClick="nextPage"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
+        app:layout_constraintTop_toBottomOf="@+id/cvv_input" />
+
+    <Spinner
+        android:id="@+id/select_card_type"
+        android:layout_width="227dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/card_number_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ct_title" />
+
+    <Spinner
+        android:id="@+id/month_selected"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/cvv_input"
+        app:layout_constraintEnd_toStartOf="@+id/year_selected"
+        app:layout_constraintStart_toEndOf="@+id/expiry_date_title" />
+
+    <Spinner
+        android:id="@+id/year_selected"
+        android:layout_width="91dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="28dp"
+        android:background="#ffff"
+        app:layout_constraintBottom_toTopOf="@+id/cvv_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/month_selected" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SelectBooking">
+
+    <TextView
+        android:id="@+id/avatar_title"
+        android:layout_width="288dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:text="Avatar: The Way of Water"
+        android:textColor="#ffffff"
+        android:textSize="90px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/avatar_poster_1"
+        android:layout_width="173dp"
+        android:layout_height="238dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_title"
+        app:srcCompat="@drawable/avatar_poster" />
+
+    <TextView
+        android:id="@+id/film_description_1"
+        android:layout_width="223dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="38dp"
+        android:text="Duration: 3 Hours and 12 Minutes
+         Rating: 12A
+          Genre: Adventure
+          Cameron's gone and a Pandora that's more gorgeous,
+ more detail, more real than ever Avatar: The Way of Water."
+        android:textColor="#ffffff"
+        android:textSize="40px"
+        app:layout_constraintStart_toEndOf="@+id/avatar_poster_1"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_title" />
+
+    <TextView
+        android:id="@+id/avatar_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Date"
+        android:textColor="#ffffff"
+        android:textSize="60px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_poster_1" />
+
+    <TextView
+        android:id="@+id/avatar_adult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="75dp"
+        android:text="Adult"
+        android:textColor="#ffffff"
+        android:textSize="60px"
+        app:layout_constraintStart_toEndOf="@+id/avatar_date"
+        app:layout_constraintTop_toBottomOf="@+id/film_description_1" />
+
+    <TextView
+        android:id="@+id/avatar_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="58dp"
+        android:text="Student"
+        android:textColor="#ffffff"
+        android:textSize="60px"
+        app:layout_constraintStart_toEndOf="@+id/select_date_button_3"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_adult" />
+
+    <TextView
+        android:id="@+id/avatar_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="243dp"
+        android:layout_marginTop="51dp"
+        android:text="Child"
+        android:textColor="#ffffff"
+        android:textSize="60px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_student" />
+
+    <TextView
+        android:id="@+id/avatar_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="250dp"
+        android:text="Times"
+        android:textColor="#ffffff"
+        android:textSize="60px"
+        app:layout_constraintEnd_toStartOf="@+id/avatar_spinner3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_date_button_3" />
+
+    <Spinner
+        android:id="@+id/avatar_spinner"
+        android:layout_width="75dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="62dp"
+        android:background="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/avatar_adult"
+        app:layout_constraintTop_toBottomOf="@+id/film_description_1" />
+
+    <Spinner
+        android:id="@+id/avatar_spinner2"
+        android:layout_width="78dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="31dp"
+        android:background="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/avatar_student"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_spinner" />
+
+    <Spinner
+        android:id="@+id/avatar_spinner3"
+        android:layout_width="79dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        android:background="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/avatar_child"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_spinner2" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="744dp"
+        android:layout_marginEnd="403dp"
+        android:layout_marginBottom="147dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/AvatarRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="26dp"
+        android:text="10:55"
+        android:textColor="#ffffff"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_times" />
+
+    <RadioButton
+        android:id="@+id/AvatarRadioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="328dp"
+        android:text="15:00"
+        android:textColor="#ffffff"
+        android:textSize="40px"
+        app:layout_constraintStart_toEndOf="@+id/AvatarRadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_poster_1" />
+
+    <RadioButton
+        android:id="@+id/AvatarRadioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="66dp"
+        android:text="19:30"
+        android:textColor="#ffffff"
+        android:textSize="40px"
+        app:layout_constraintStart_toEndOf="@+id/AvatarRadioButton2"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_child" />
+
+    <RadioButton
+        android:id="@+id/AvatarRadioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="47dp"
+        android:text="23:50"
+        android:textColor="#ffffff"
+        android:textSize="40px"
+        app:layout_constraintStart_toEndOf="@+id/AvatarRadioButton3"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_spinner3" />
+
+    <Button
+        android:id="@+id/AvatarButton"
+        android:layout_width="106dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#ff0000"
+        android:text="Back"
+        android:onClick="filmList1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AvatarRadioButton" />
+
+    <Button
+        android:id="@+id/AvatarButton2"
+        android:layout_width="109dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#ff0000"
+        android:text="Next"
+        android:onClick="orderInfo1"
+        app:layout_constraintStart_toEndOf="@+id/AvatarButton"
+        app:layout_constraintTop_toBottomOf="@+id/AvatarRadioButton3" />
+
+    <Button
+        android:id="@+id/select_date_button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="110dp"
+        android:backgroundTint="#E91E63"
+        android:text="Select"
+        android:onClick="PickADate"
+        app:layout_constraintBottom_toTopOf="@+id/avatar_times"
+        app:layout_constraintEnd_toStartOf="@+id/avatar_student"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_date" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
